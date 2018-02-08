@@ -314,6 +314,7 @@ class WXAdapter extends WXEvent
             $wx_user_data = $_SESSION["wx_user_data"];
             return $wx_user_data['openid'];
         } else {
+            $this->logger->debug("openid===" . json_encode($_GET,true));
             if (isset($_GET['code'])) {
                 $jsonObj = json_decode($this->oauth2accesstoken($_GET['code']), true);
                 $openid = $jsonObj['openid'];
@@ -325,6 +326,7 @@ class WXAdapter extends WXEvent
                         header("location: " . $redirect_url);
                         exit();
                     }
+                    $this->logger->debug("openid===" . json_encode($openid,true));
                     return $openid;
                 }
             } else {

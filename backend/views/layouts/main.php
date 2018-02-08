@@ -11,6 +11,8 @@ use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 
 AppAsset::register($this);
+
+$openid = \Yii::$app->wx->getUserOpenID();
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -26,13 +28,13 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 <script>
-    var openid = '<?//=$openid?>';
+    var openid = '<?=$openid?>';
     var openid_other = '<?//=$openid_orther?>';
     var appId="<?//= \Yii::$app->wx->wx_appid ?>";
     var js_root="<?//= \Yii::getAlias('@web/')?>";
     var jsapi_ticket ="<?// =\Yii::$app->wx->getJSApiTicket() ?>";
-    var accesstoken = "<?=\Yii::$app->wx->getAccessToken() ?>";
-    console.log(accesstoken)
+    var accesstoken = "<?//=\Yii::$app->wx->getAccessToken() ?>";
+    console.log(openid)
 </script>
 
 <div class="wrap">
