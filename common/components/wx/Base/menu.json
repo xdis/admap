@@ -1,0 +1,29 @@
+{
+    "button": [
+        {
+            "type": "click", 
+            "name": "啦啦啦",
+            "key": "SYSTEM_INFO_MSG"
+        }, 
+        {
+            "name": "啦啦啦",
+            "sub_button": [
+                {
+                    "type": "view", 
+                    "name": "啦啦啦",
+                    "url": "http://b.admap.com"
+                }, 
+                {
+                    "type": "view", 
+                    "name": "消息通知", 
+                    "url": "http://b.admap.com"
+                },
+                {
+                    "type": "view", 
+                    "name": "个人中心", 
+                    "url": "http://b.admap.com"
+                }
+            ]
+        }
+    ]
+}
