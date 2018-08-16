@@ -4,7 +4,7 @@ return [
     'basePath' => dirname(__DIR__),
     'components' => [
         'user' => [
-    //添加测试文件ee rrrrr   测试 3444     55555 778   这是是功能开发代码   dev开发代码  dev-test分支代码
+    //添加测试文件ee rrrrr   测试 3444     55555 778   这是是功能开发代码   dev开发代码  dev-test分支代码   本地代码提交git代码到dev环境
             'class' => 'yii\web\User',
             'identityClass' => 'common\models\User',
         ],
